@@ -1,0 +1,129 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Responsive Business website template</title>
+      <link rel="stylesheet" href="css/components.css">
+      <link rel="stylesheet" href="css/responsee.css">
+      <link rel="stylesheet" href="css/democss.css">
+      <link rel="stylesheet" href="owl-carousel/owl.carousel.css">
+      <link rel="stylesheet" href="owl-carousel/owl.theme.css">
+      <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+      <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+      <script type="text/javascript" src="js/jquery-ui.min.js"></script>    
+      <script type="text/javascript" src="js/modernizr.js"></script>
+      <script type="text/javascript" src="js/responsee.js"></script>
+      <!--[if lt IE 9]>
+	      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+      <![endif]-->
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    
+</head>
+<body class="size-960">
+    <form id="form1" runat="server">
+    <!-- HEADER -->
+      <header>
+         <div class="line">
+            <div class="box">
+               <div class="s-6 l-2">
+            <img src="img/PGS-Organic-Council-Logo-July2011-286x300.jpg" />
+           
+                        
+               </div>
+               
+            </div> 
+         </div>  
+                         
+         <!-- TOP NAV -->  
+         <div class="line">
+            <nav class="margin-bottom">
+               <p class="nav-text">Custom menu text</p>
+               <div class="top-nav s-12 l-10">
+                  <ul>
+                     <li><a href="Default.aspx">Home</a></li>
+                     <li>
+                        <a>Product list</a>
+                        <ul>
+                           <li><a>Process food</a></li>
+                           <li><a>Grains & Nutes</a></li>
+                           <li>
+                              <a>Product 3</a>
+                              <ul>
+                                <li><a href="Admin/Farmer.aspx">Farmer Fillup</a></li>
+                                 <li><a href="Admin/product upload.aspx">Product Fillup</a></li>
+                                 <li><a href="showprod.aspx">product list</a></li>
+                                 </ul>
+                           </li>
+                        </ul>
+                     </li>
+                     <li>
+                        <a href="Register.aspx">Company</a>
+                        <ul>
+                           <li><a>About</a></li>
+                           <li><a>Location</a></li>
+                        </ul>
+                     </li>
+                     <li><a>Contact</a></li>
+                      </li>
+                      <li>
+                        <a>Profile</a>
+                        <ul>
+                           <li><a href="profile.aspx">Shrinivas Bagal</a></li>
+                           <li><a>Ankush pawar</a></li></ul>
+                             <li><a href="Gallery.aspx" >Gallery</a></li>
+                               <li><a href="Log in.aspx">LogIn</a></li>
+                              
+                                              
+               </div>
+               <div class="hide-s hide-m l-2">
+                
+               </div>
+            </nav>
+         </div>
+      </header>
+     
+       
+         <!-- HOME PAGE BLOCK -->      
+       
+         <!-- ASIDE NAV AND CONTENT -->
+         <div class="line">
+            <div class="box margin-bottom">
+               <div class="margin">
+                  <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+               </div>
+            </div>
+         </div>
+         <!-- GALLERY CAROUSEL -->
+      </section>
+      <!-- FOOTER -->
+      <script type="text/javascript" src="owl-carousel/owl.carousel.js"></script>  
+      <script type="text/javascript">
+          jQuery(document).ready(function ($) {
+              $("#owl-demo").owlCarousel({
+                  navigation: true,
+                  slideSpeed: 300,
+                  paginationSpeed: 400,
+                  autoPlay: true,
+                  singleItem: true
+              });
+              $("#owl-demo2").owlCarousel({
+                  items: 4,
+                  lazyLoad: true,
+                  autoPlay: true,
+                  navigation: true,
+                  pagination: false
+              });
+          });	 
+      </script>
+        
+    </form>
+</body>
+</html>
